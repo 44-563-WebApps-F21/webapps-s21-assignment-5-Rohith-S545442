@@ -14,6 +14,24 @@
   <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
+  <nav class="navbar navbar-expand-md navbar-light bg-light">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Interesting animals</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="plane.html">Plane</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="train.html">Train</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
 <h1>Animals by Rohith Sai Ganguru</h1>
 <div class="container">
 <div class="row">
@@ -93,6 +111,50 @@
     </tr>
   </tbody>
 </table>
-
+<div class="container">
+  <label><h5><b>Buttons with Initials</b></h5></label>
+<div class="btn btn-toolbar">
+  <div class="btn-group">
+    <button type="button" class="btn btn-success">G</button>
+    <button type="button" class="btn btn-success">A</button>
+    <button type="button" class="btn btn-success">N</button>
+  </div>
+  <div class="btn-group">
+    <button type="button" class="btn btn-warning">G</button>
+    <button type="button" class="btn btn-warning">U</button>
+  </div>
+  <div class="btn-group">
+    <button type="button" class="btn btn-danger">R</button>
+  </div>
+</div>
+</div>
+<div class="container">
+  <div class="dropdown">
+    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+      Dropdown button
+    </button>
+    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+      <li><a class="dropdown-item" href="plane.html">Click here for Plane page</a></li>
+      <li><a class="dropdown-item" href="train.html">Click here for Train page</a></li>
+    </ul>
+  </div>
+</div>
+<br>
+<form>
+  <div class="mb-3 form-group">
+    <label for="exampleInputEmail1" class="form-label">Email address</label>
+    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+    <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+  </div>
+  <div class="mb-3 from-group">
+    <label for="exampleInputPassword1" class="form-label">Animal</label>
+    <input type="text" class="form-control" id="exampleInputPassword1" placeholder="Enter your Animal">
+  </div>
+  <div class="mb-3 form-check">
+    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+    <label class="form-check-label" for="exampleCheck1">Sign up for newsletter?</label>
+  </div>
+  <button type="submit" class="btn btn-primary">Submit</button>
+</form>
 </body>
 </html>
