@@ -14,7 +14,7 @@
   <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
-  <nav class="navbar navbar-expand-md navbar-light bg-light">
+  <nav class="navbar navbar-expand-md">
     <div class="container-fluid">
       <a class="navbar-brand" href="#">Interesting animals</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -50,7 +50,7 @@
     <div class="col-md">Uakari</div>
     <div class="col-md">Rabbit</div>
 </div>
-<p>Animal row breaks first becuase of its size which is >=768px and also we are using column medium for that row</p>
+<p class="Reason">Animal row breaks first becuase of its size which is >=768px and also we are using column medium for that row</p>
 </div>
 <div class="container">
   <img src="Goat.jpg" class="img-fluid" alt="Goat Image" height="333" width="333">
@@ -112,25 +112,23 @@
   </tbody>
 </table>
 <div class="container">
-  <label><h5><b>Buttons with Initials</b></h5></label>
-<div class="btn btn-toolbar">
-  <div class="btn-group">
+<div class="btn-toolbar" role="toolbar" aria-label="Buttons">
+  <div class="btn-group" role="group" aria-label="First Group">
     <button type="button" class="btn btn-success">G</button>
     <button type="button" class="btn btn-success">A</button>
     <button type="button" class="btn btn-success">N</button>
   </div>
-  <div class="btn-group">
+  <div class="btn-group" role="group" aria-label="Second Group">
     <button type="button" class="btn btn-warning">G</button>
     <button type="button" class="btn btn-warning">U</button>
   </div>
-  <div class="btn-group">
+  <div class="btn-group" role="group" aria-label="Third Group">
     <button type="button" class="btn btn-danger">R</button>
   </div>
 </div>
-</div>
-<div class="container">
+<br>
   <div class="dropdown">
-    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+    <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
       Dropdown button
     </button>
     <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
@@ -141,20 +139,48 @@
 </div>
 <br>
 <form>
-  <div class="mb-3 form-group">
+  <div class="form-group">
     <label for="exampleInputEmail1" class="form-label">Email address</label>
     <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
     <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
   </div>
-  <div class="mb-3 from-group">
-    <label for="exampleInputPassword1" class="form-label">Animal</label>
-    <input type="text" class="form-control" id="exampleInputPassword1" placeholder="Enter your Animal">
+  <div class="form-group">
+    <label for="animalName" class="form-label">Animal</label>
+    <input type="text" class="form-control" id="animalName" aria-describedby="animalHelp" placeholder="Enter your Animal">
   </div>
-  <div class="mb-3 form-check">
+  <div class="form-check">
     <input type="checkbox" class="form-check-input" id="exampleCheck1">
     <label class="form-check-label" for="exampleCheck1">Sign up for newsletter?</label>
   </div>
   <button type="submit" class="btn btn-primary">Submit</button>
 </form>
+<br>
+<div class="row">
+<div class="card col-sm-4">
+  <img src="Goat.jpg" class="card-img-top" alt="Goat Image">
+  <div class="card-body">
+    <h5 class="card-title">Goat</h5>
+    <p class="card-text">The domestic goat or simply goat (Capra hircus) is a domesticated species of goat-antelope typically kept as livestock.</p>
+    <a href="https://en.wikipedia.org/wiki/Goat" class="btn btn-primary">Click here to know more about that..</a>
+  </div>
+</div>
+<div class="card col-sm-4">
+  <img src="Antelope.jpg" class="card-img-top" alt="Antelope Image">
+  <div class="card-body">
+    <h5 class="card-title">Antelope</h5>
+    <p class="card-text">The term antelope is used to refer to many species of even-toed ruminant that are indigenous to various regions in Africa and Eurasia.
+    </p>
+    <a href="https://en.wikipedia.org/wiki/Antelope" class="btn btn-primary">Click here to know more about that..</a>
+  </div>
+</div>
+<div class="card col-sm-4">
+  <img src="Giraffe.jpg" class="card-img-top" alt="Girafee Image">
+  <div class="card-body">
+    <h5 class="card-title">Giraffe</h5>
+    <p class="card-text">The giraffe (Giraffa) is an African artiodactyl mammal, the tallest living terrestrial animal and the largest ruminant.</p>
+    <a href="https://en.wikipedia.org/wiki/Giraffe" class="btn btn-primary">Click here to know more about that..</a>
+  </div>
+</div>
+</div>
 </body>
 </html>
